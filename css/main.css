@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+.bg-celeste{
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+.myshadow{
+    box-shadow: 0 0.5rem 1rem #99e5cf8c;
+}
+
+.icono{
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-size{
+    width: 420px;
+    height: 565px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-card{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.conteiner-table{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 15px;
+}
+
+.redes{
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.sociales{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.sociales li{
+    display: inline-block;
+}
+
+.sociales a{
+    padding: 10px;
+}
+.sociales img{
+    width: 45px;
+    height: 45px;
+}
+
+.table th, table td, table tr{
+    border: 1px solid #0c0c0c;
+    padding: 12px;
+    text-align: left;
+}
+
+.table td, table th, table tr{
+    border: 1px solid #0c0c0c;
+    padding: 12px;
+    text-align: left;
+}
+
+.btnmio{
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.btnelim{
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #c44a4a;
+    border: 1px solid #c44a4a;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+section{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 40px;
+
+}
+
+section > img{
+    height: 1%;
+}
+
+.cta{
+    display: inline-block;
+    padding: 7px 0;
+    width: 100px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #283773;
+    background: #fff;
+}
+
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.mymodal{
+    width: 40%;
+    height: 70%;
+    background-image: url(../asset/pasear\ perro.png);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    border-radius: 10%;
+}
+
+.modal-close{
+    transform: translateY(-200%); 
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.modal-texto{
+    top: 0;
+    left: 0;
+}
